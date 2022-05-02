@@ -39,12 +39,14 @@ syntax on
 " Enable 256 colors
 set t_Co=256
 set termguicolors
-
+set encoding=UTF-8
+set guifont=FiraCode:h14
 " The background color brightness
 set background=dark
 
 " Set color scheme
-colorscheme dracula
+" colorscheme dracula
+colorscheme codedark
 
 " Type of file; triggers the FileType event when set
 filetype plugin on
@@ -101,7 +103,7 @@ set showmatch
 " -----------------------------------------------------------------------------
 
 " Number of spaces a <Tab> in the text stands for
-set tabstop=4
+set tabstop=2
 
 " Number of spaces used for each step of (auto)indent
 set shiftwidth=4
@@ -137,7 +139,7 @@ set wildignore=*.o,~*,*.pyc,bower_components,node_modules
 
 " Command-line completion shows a list of matches
 set wildmenu
-
+set number
 " -----------------------------------------------------------------------------
 " => Others
 " -----------------------------------------------------------------------------
@@ -150,3 +152,24 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 set backupcopy=yes
+
+"let g:NERDTreeGitStatusIndicatorMapCustom = {
+"    \ "Modified"  : "✹",
+"    \ "Staged"    : "✚",
+"    \ "Untracked" : "✭",
+"    \ "Renamed"   : "➜",
+"    \ "Unmerged"  : "═",
+"    \ "Deleted"   : "✖",
+"    \ "Dirty"     : "✗",
+"    \ "Clean"     : "✔︎",
+"    \ 'Ignored'   : 'X',
+"    \ "Unknown"   : "?"
+"    \ }
+
+let g:airline_powerline_fonts = 1
+"let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+"let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+
+if exists("g:loaded_webdevicons")
+	call webdevicons#refresh()
+endif
