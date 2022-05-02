@@ -10,7 +10,7 @@ My personal **Vim** config files.
 1. Clone the repository:
 
 	```
-	$ git clone https://github.com/rougeth/dotvim.git ~/.vim && cd ~/.vim
+	$ git clone https://github.com/gabssanto/dotvim.git ~/.vim && cd ~/.vim
 	``` 
 
 2. Clone vim-plug:
