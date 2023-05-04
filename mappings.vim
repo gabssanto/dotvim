@@ -36,11 +36,11 @@ nnoremap <C-p> "+gP
 vnoremap <C-p> "+gP
 
 nnoremap <leader>f :Ag<CR>
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-m>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 " See current file in nerdtree
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-n> :NERDTreeFind<CR>
 " Tab navigation
 nnoremap <leader>. :tabn<CR>
 nnoremap <leader>, :tabp<CR>
@@ -53,10 +53,10 @@ nnoremap <leader>s <C-w>s<CR>
 
 nnoremap <leader>z <C-w><S-<><CR>
 
-nnoremap d    :resize -5<CR>
-nnoremap s  :resize +5<CR>
-nnoremap a  :vertical resize -5<CR>
-nnoremap f :vertical resize +5<CR>
+nnoremap D    :resize -5<CR>
+nnoremap S  :resize +5<CR>
+nnoremap A  :vertical resize -5<CR>
+nnoremap F :vertical resize +5<CR>
 
 
 nnoremap <silent> K :call CocAction('doHover')<CR>
@@ -94,3 +94,7 @@ omap <leader><tab> <plug>(fzf-maps-o)
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-line)
+
+map <C-G> :Goyo<CR>
+nmap <C-T> :TagbarToggle<CR>
+nnoremap <silent> <C-f> :Files<CR>

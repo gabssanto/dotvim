@@ -40,6 +40,8 @@ Plug 'hdima/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'justinj/vim-jsx'
 Plug 'isruslan/vim-es6'
+" Rust
+Plug 'rust-lang/rust.vim'
 
 " HTML
 Plug 'mattn/emmet-vim'
@@ -59,5 +61,6 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 " Others
 Plug 'junegunn/goyo.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'preservim/tagbar'
 
 call plug#end()
